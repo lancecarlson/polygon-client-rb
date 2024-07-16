@@ -7,8 +7,8 @@ require "polygonio/version"
 Gem::Specification.new do |spec|
   spec.name          = "polygonio"
   spec.version       = Polygonio::VERSION
-  spec.authors       = ["Lance Carlson"]
-  spec.email         = ["lancecarlson@gmail.com"]
+  spec.authors       = ["Lance Carlson", "Edwin Liang"]
+  spec.email         = ["lancecarlson@gmail.com", "me@edwinliang.com"]
 
   spec.license       = "MIT"
 
@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
   spec.description   = "Client library for polygon.io's REST and Websocket API's. Polygon IO is an API for market data."
 
   spec.metadata = {
-    "homepage_uri" => "https://github.com/lancecarlson/polygonio-rb",
-    "source_code_uri" => "https://github.com/lancecarlson/polygonio-rb",
-    "bug_tracker_uri" => "https://github.com/lancecarlson/polygonio-rb/issues"
+    "homepage_uri" => "https://github.com/eliang/polygonio-rb",
+    "source_code_uri" => "https://github.com/eliang/polygonio-rb",
+    "bug_tracker_uri" => "https://github.com/eliang/polygonio-rb/issues"
   }
 
   # Specify which files should be added to the gem when it is released.
