@@ -54,6 +54,10 @@ module Polygonio
       def crypto
         Rest::Crypto.new(self)
       end
+
+      def options
+        Rest::Options.new(self)
+      end
     end
 
     class PolygonRestHandler

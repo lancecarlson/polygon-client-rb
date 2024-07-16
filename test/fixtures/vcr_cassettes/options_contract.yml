@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.polygon.io/v3/reference/options/contracts/O:SPY251219C00650000?apiKey=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.17.8
+      date:
+      - Tue, 28 Apr 2020 17:02:21 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - close
+      vary:
+      - Accept-Encoding
+      x-request-id:
+      - cc00f2a9aae526de9615e2bf545f56ca, cc00f2a9aae526de9615e2bf545f56ca
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":{"cfi":"OCASPS","contract_type":"call","exercise_style":"american","expiration_date":"2025-12-19","primary_exchange":"BATO","shares_per_contract":100,"strike_price":650,"ticker":"O:SPY251219C00650000","underlying_ticker":"SPY"},"status":"OK","request_id":"2587013527993ef7c98b24475e75eeac"}'
+    http_version: null
+  recorded_at: Tue, 28 Apr 2020 17:02:21 GMT
+recorded_with: VCR 5.1.0

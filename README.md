@@ -43,6 +43,8 @@ client.forex.historic_ticks
 
 client.crypto.list # list exchanges
 
+client.options
+
 Polygonio::Websocket::Client.new("crypto", api_key).subscribe("XQ.BTC-USD") do |event|
   pp "Incoming message"
   pp event
