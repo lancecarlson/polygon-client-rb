@@ -20,7 +20,7 @@ module Polygonio
         interval: 0.05,
         interval_randomness: 0.5,
         backoff_factor: 2,
-        exceptions: [Faraday::ConnectionFailed].concat(Faraday::Request::Retry::DEFAULT_EXCEPTIONS)
+        exceptions: [Faraday::ConnectionFailed].concat(Faraday::Retry::Middleware::DEFAULT_EXCEPTIONS)
       }.freeze
 
       def request
@@ -29,7 +29,7 @@ module Polygonio
           builder.use ErrorMiddleware
           @request_builder&.call(builder)
           builder.request :json
-          builder.response :oj
+          builder.response :json
           builder.adapter Faraday.default_adapter
         end
       end
